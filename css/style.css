@@ -830,7 +830,6 @@ a:hover {
 //--//-->   COUNTER
 ======================================*/
 
-
 .section-counter {
   position: relative;
   padding: 100px 0;
@@ -878,15 +877,12 @@ a:hover {
   height: 100%;
 }
 
-
 @media only screen and (max-width: 600px) {
   /* Styles for mobile screens */
   .my-element {
     width: 100%; /* Make the element full width */
   }
 }
-
-
 
 /*======================================
 //--//-->   PORTFOLIO
