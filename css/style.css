@@ -1178,6 +1178,7 @@ a:hover {
 //--//-->   CONTACT
 ======================================*/
 
+
 /* Original styles */
 .contact-mf {
   padding: 60px 0;
@@ -1290,56 +1291,41 @@ footer .copyright-box {
   }
 }
 
-
-#sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+/* General padding for the sections */
+.sect-pt4 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-#errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#sendmessage.show,
-#errormessage.show,
-.show {
-  display: block;
-}
-
-.validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
+.footer-paralax {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Responsive design for mobile devices */
 @media (max-width: 767px) {
+  .sect-pt4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-paralax {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .contact-mf {
     padding: 30px 0;
   }
-  
+
   .contact-box {
     margin: 20px 0;
   }
-  
+
   footer {
     padding-bottom: 2rem;
   }
 }
-
   
 /*======================================
 //--//-->   BUTTON
