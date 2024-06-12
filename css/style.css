@@ -1179,7 +1179,15 @@ a:hover {
 ======================================*/
 
 
-/* Original styles */
+
+/* .footer-paralax {
+  padding: 4rem 0 0 0;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+} */
+
 .contact-mf {
   padding: 60px 0;
   background-color: #f9f9f9;
@@ -1254,6 +1262,11 @@ a:hover {
   border-color: #004085;
 }
 
+
+/*======================================
+//--//-->   FOOTER
+======================================*/
+
 footer {
   text-align: center;
   color: #fff;
@@ -1276,31 +1289,6 @@ footer .copyright-box {
   color: black; /* Set the font color to black */
 }
 
-/* Responsive design for mobile devices */
-@media (max-width: 767px) {
-  .contact-mf {
-    padding: 30px 0;
-  }
-  
-  .contact-box {
-    margin: 20px 0;
-  }
-  
-  footer {
-    padding-bottom: 2rem;
-  }
-}
-
-/* General padding for the sections */
-.sect-pt4 {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-paralax {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
   
 /*======================================
