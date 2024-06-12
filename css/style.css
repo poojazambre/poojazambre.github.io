@@ -1178,14 +1178,7 @@ a:hover {
 //--//-->   CONTACT
 ======================================*/
 
- .footer-paralax {
-  padding: 4rem 0 0 0;
-}
-
-.contact-mf {
-  margin-top: 4rem;
-} 
-
+/* Original styles */
 .contact-mf {
   padding: 60px 0;
   background-color: #f9f9f9;
@@ -1260,11 +1253,6 @@ a:hover {
   border-color: #004085;
 }
 
-
-/*======================================
-//--//-->   FOOTER
-======================================*/
-
 footer {
   text-align: center;
   color: #fff;
@@ -1286,11 +1274,6 @@ footer .credits a {
 footer .copyright-box {
   color: black; /* Set the font color to black */
 }
-
-
-/*======================================
-//--//-->   CONtaCT FORM
-======================================*/
 
 #sendmessage {
   color: #0078ff;
@@ -1326,6 +1309,22 @@ footer .copyright-box {
   font-size: 13px;
 }
 
+/* Responsive design for mobile devices */
+@media (max-width: 767px) {
+  .contact-mf {
+    padding: 30px 0;
+  }
+  
+  .contact-box {
+    margin: 20px 0;
+  }
+  
+  footer {
+    padding-bottom: 2rem;
+  }
+}
+
+  
 /*======================================
 //--//-->   BUTTON
 ======================================*/
