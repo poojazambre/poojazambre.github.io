@@ -1302,30 +1302,6 @@ footer .copyright-box {
   padding-bottom: 30px;
 }
 
-/* Responsive design for mobile devices */
-@media (max-width: 767px) {
-  .sect-pt4 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .footer-paralax {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .contact-mf {
-    padding: 30px 0;
-  }
-
-  .contact-box {
-    margin: 20px 0;
-  }
-
-  footer {
-    padding-bottom: 2rem;
-  }
-}
   
 /*======================================
 //--//-->   BUTTON
