@@ -133,7 +133,7 @@
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      About me
+                      About Me
                     </h5>
                   </div>
                   <p class="lead">
@@ -439,14 +439,16 @@
 
   <!--/ Section Services End /-->
 
-   <!--/ Section Testimonials Star /-->
-   <section id="Testimonials" class="about-mf sect-pt4 route"></section>
-   <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg);  height: 700px;">
+  <!-- Section Testimonials Start -->
+<section id="Testimonials" class="about-mf sect-pt4 route">
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg); height: 700px;">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
+          <!-- Left arrow -->
+          <div class="arrow-left" onclick="prevTestimonial()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 2rem; color: white; cursor: pointer;">&#10094;</div>
+          <div id="testimonial-mf" class="owl-carousel owl-theme" style="position: relative;">
             <div class="testimonial-box">
               <div class="author-test">
                 <img src="img/ibm.png" alt="" class="rounded-circle b-shadow-a">
@@ -454,7 +456,7 @@
               </div>
               <div class="content-test">
                 <p class="description lead">
-                I started my professional journey with IBM in March 2019 as an Oracle Database Administrator. I worked for 2 years 6 months at IBM.
+                  I started my professional journey with IBM in March 2019 as an Oracle Database Administrator. I worked for 2 years 6 months at IBM.
                 </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
@@ -466,7 +468,7 @@
               </div>
               <div class="content-test">
                 <p class="description lead">
-                After the separation of the two major business units of IBM, I was transferred to Kyndryl Solutions. I worked on the same profile here for 1 year from Sep 2021 to Sep 2022.
+                  After the separation of the two major business units of IBM, I was transferred to Kyndryl Solutions. I worked on the same profile here for 1 year from Sep 2021 to Sep 2022.
                 </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
@@ -478,16 +480,52 @@
               </div>
               <div class="content-test">
                 <p class="description lead">
-                  Currently, I work as a student researcher at Fraunhofer IOF. I started my professional journey in Germany with them in January 2024. I am working in the field of Quantum Communications.                </p>
+                  Currently, I work as a student researcher at Fraunhofer IOF. I started my professional journey in Germany with them in January 2024. I am working in the field of Quantum Communications.
+                </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
             </div>
           </div>
+          <!-- Right arrow -->
+          <div class="arrow-right" onclick="nextTestimonial()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 2rem; color: white; cursor: pointer;">&#10095;</div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#testimonial-mf").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+
+    // Custom Navigation Events
+    window.nextTestimonial = function() {
+      $("#testimonial-mf").trigger('next.owl.carousel');
+    }
+    window.prevTestimonial = function() {
+      $("#testimonial-mf").trigger('prev.owl.carousel');
+    }
+  });
+</script>
 
   <!--/ Section Portfolio Star /-->
   <section id="work" class="portfolio-mf sect-pt4 route">
